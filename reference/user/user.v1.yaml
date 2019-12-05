@@ -44,8 +44,10 @@ paths:
               examples:
                 application/json:
                   value:
-                    id: 1
-                    name: Yogesh
+                    - id: 1
+                      name: Yogesh
+                    - id: 2
+                      name: monty
       operationId: get-users
     post:
       summary: ''
