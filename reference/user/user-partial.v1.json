@@ -1,0 +1,9 @@
+{
+  "title": "user-partial",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}

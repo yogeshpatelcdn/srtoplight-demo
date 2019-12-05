@@ -1,0 +1,9 @@
+{
+  "title": "user-full",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}
