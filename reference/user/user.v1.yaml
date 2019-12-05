@@ -17,10 +17,6 @@ paths:
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
-                $ref: ./user-full-2.v1.json
       operationId: 'get-users-{userid}'
     delete:
       summary: ''
@@ -40,7 +36,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: ./user-full-2.v1.json
+                  $ref: ./models/user-full-2.v1.json
               examples:
                 application/json:
                   value:
@@ -59,7 +55,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: ../order/order-partial.v1.json
+              $ref: ./models/user-full-2.v1.json
 components:
   schemas: {}
   securitySchemes: {}
