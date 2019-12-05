@@ -1,0 +1,12 @@
+{
+  "title": "order-partial",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "integer"
+    }
+  }
+}

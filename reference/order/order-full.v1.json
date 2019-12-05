@@ -1,0 +1,15 @@
+{
+  "title": "order-full",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "integer"
+    }
+  }
+}
