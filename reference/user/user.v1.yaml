@@ -41,6 +41,11 @@ paths:
                 type: array
                 items:
                   $ref: ./user-full-2.v1.json
+              examples:
+                application/json:
+                  value:
+                    id: 1
+                    name: Yogesh
       operationId: get-users
     post:
       summary: ''
@@ -55,3 +60,4 @@ paths:
               $ref: ../order/order-partial.v1.json
 components:
   schemas: {}
+  securitySchemes: {}
