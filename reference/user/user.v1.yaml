@@ -15,7 +15,8 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - User
       responses:
         '200':
           description: OK
@@ -63,5 +64,8 @@ paths:
             schema:
               $ref: ./models/user-full.v1.json
 components:
-  schemas: {}
-  securitySchemes: {}
+  schemas:
+    x-tags:
+      - Users
+    title: User
+    description: A list of user.

@@ -6,4 +6,8 @@ servers:
 - url: http://localhost:3000
 paths: {}
 components:
-  schemas: {}
+  schemas:
+    x-tags:
+      - Orders
+    title: Order
+    description: A list of order.
