@@ -10,6 +10,8 @@ paths:
       - type: string
         name: userid
         in: path
+        schema:
+          type: integer
         required: true
     get:
       summary: Your GET endpoint
@@ -17,6 +19,10 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/user-partial.v1.json
       operationId: 'get-users-{userid}'
     delete:
       summary: ''
@@ -36,7 +42,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: ./models/user-full-2.v1.json
+                  $ref: ./models/user-full.v1.json
               examples:
                 application/json:
                   value:
@@ -55,7 +61,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: ./models/user-full-2.v1.json
+              $ref: ./models/user-full.v1.json
 components:
   schemas: {}
   securitySchemes: {}
